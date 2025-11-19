@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: slideDown 1s ease-out;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    animation: slideUp 1s ease-out;
+}
+
+/* Countdown Section */
+.countdown-section {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 20px 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.countdown-section h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 40px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.time-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    border-radius: 15px;
+    min-width: 120px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.time-box:hover {
+    transform: translateY(-5px);
+}
+
+.time-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.time-label {
+    display: block;
+    font-size: 1rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+.countdown-message {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Messages Section */
+.messages-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.messages-section h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.messages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 0 20px;
+}
+
+.message-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.message-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.message-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.message-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Memories Section */
+.memories-section {
+    background: white;
+    padding: 60px 20px;
+    margin: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.memories-section h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.memories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.memory-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.memory-card:hover {
+    transform: scale(1.05);
+}
+
+.memory-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.memory-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.memory-caption {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Final Message */
+.final-message {
+    text-align: center;
+    padding: 80px 20px 100px;
+    color: white;
+}
+
+.heart-animation {
+    font-size: 5rem;
+    animation: heartbeat 1.5s ease-in-out infinite;
+    margin-bottom: 30px;
+}
+
+.final-message h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.final-message p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .countdown {
+        gap: 10px;
+    }
+    
+    .time-box {
+        min-width: 80px;
+        padding: 20px;
+    }
+    
+    .time-number {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 2rem !important;
+    }
+}
