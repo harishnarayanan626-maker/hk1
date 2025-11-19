@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💙 BABY COME HERE</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>">
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+    <!-- Flying Butterflies -->
+    <div class="butterfly" style="left: 10%; top: 20%; animation-delay: 0s;">🦋</div>
+    <div class="butterfly" style="left: 80%; top: 60%; animation-delay: 3s;">🦋</div>
+    <div class="butterfly" style="left: 50%; top: 10%; animation-delay: 6s;">🦋</div>
+    <div class="butterfly" style="left: 20%; top: 70%; animation-delay: 9s;">🦋</div>
+    <div class="butterfly" style="left: 70%; top: 30%; animation-delay: 12s;">🦋</div>
+    
+    <!-- Floating Hearts -->
+    <div class="heart" style="left: 15%; animation-delay: 0s;">💕</div>
+    <div class="heart" style="left: 35%; animation-delay: 2s;">💖</div>
+    <div class="heart" style="left: 55%; animation-delay: 4s;">💕</div>
+    <div class="heart" style="left: 75%; animation-delay: 6s;">💖</div>
+    <div class="heart" style="left: 25%; animation-delay: 1s;">💕</div>
+    <div class="heart" style="left: 65%; animation-delay: 3s;">💖</div>
+    <div class="heart" style="left: 45%; animation-delay: 5s;">💕</div>
+    <div class="heart" style="left: 85%; animation-delay: 7s;">💖</div>
+    
+    <div class="login-container">
+        <h2 class="main-title">COUPLE'S CORE</h2>
+        
+        <div class="couple-photos">
+            <div class="photo-left">
+                <img src="couple-photo1.jpg" alt="Photo 1">
+            </div>
+            
+            <div class="login-box">
+                <div class="lock-icon">🔒</div>
+                <h1>Welcome</h1>
+                <p class="subtitle">Enter your details to see the surprise</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+                
+                <button type="submit" class="surprise-btn">See Surprise 💝</button>
+                
+                <p id="error-message" class="error-message"></p>
+            </form>
+        </div>
+        
+        <div class="photo-right">
+            <img src="couple-photo2.jpg" alt="Photo 2">
+        </div>
+    </div>
+    </div>
+
+    <script src="login-script.js"></script>
+</body>
+</html>
